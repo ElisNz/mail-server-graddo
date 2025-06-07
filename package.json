@@ -2,10 +2,13 @@
   "name": "mail-server-graddo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "test"
   },
   "author": "en",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
 }
