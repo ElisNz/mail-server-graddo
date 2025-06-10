@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "test"
+    "test": "cross-env WORKER_MAIL=graddotradgard@gmail.com tsc && node index.ts",
+    "start": "tsc && node index.js"
   },
   "author": "en",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0",
+    "nodemailer": "^7.0.3",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.17"
   }
 }

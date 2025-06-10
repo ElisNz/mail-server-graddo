@@ -1,1 +1,1 @@
-A mailing service to serve contact requests for a local landscaping service
+A cloud mailing server for contact requests for a local landscaping service
