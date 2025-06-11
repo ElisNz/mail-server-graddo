@@ -68,6 +68,10 @@ app.use(express.json());
 
 app.post("/sendMail", sendMail); 
 
+app.get("/ping", (req, res) => {
+  res.send("Mail service is running");
+});
+
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 8080;
 
 app.listen(PORT, () => {
