@@ -13,6 +13,7 @@
     "cross-env": "^7.0.3",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "node": "^21.7.2",
     "nodemailer": "^7.0.3",
     "nvm": "^0.0.4",
     "typescript": "^5.8.3"
