@@ -1,7 +1,6 @@
 import nodemailer from "nodemailer";
-import express from "express";
 
-const sendMail = (req: express.Request, res: express.Response) => {
+exports.sendMail = (req: any, res: any) => {
   if (!req.body.subject || !req.body.text) {
     res.status(422).send({
       error: {
@@ -61,19 +60,3 @@ const sendMail = (req: express.Request, res: express.Response) => {
       });
     });
 }
-
-const app = express();
-
-app.use(express.json());
-
-app.post("/sendMail", sendMail); 
-
-app.get("/ping", (req, res) => {
-  res.send("Mail service is running");
-});
-
-const PORT = process.env.PORT ? parseInt(process.env.PORT) : 8080;
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
