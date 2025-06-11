@@ -5,17 +5,20 @@
   "main": "index.ts",
   "scripts": {
     "test": "cross-env WORKER_MAIL=graddotradgard@gmail.com tsc && node index.ts",
-    "start": "tsc && node index.ts"
+    "start": "tsc && node index.js"
   },
   "author": "en",
   "license": "ISC",
   "dependencies": {
     "cross-env": "^7.0.3",
     "dotenv": "^16.5.0",
+    "express": "^5.1.0",
     "nodemailer": "^7.0.3",
+    "nvm": "^0.0.4",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
+    "@types/express": "^5.0.3",
     "@types/nodemailer": "^6.4.17"
   }
 }
